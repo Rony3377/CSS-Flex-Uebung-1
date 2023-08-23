@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS, Flex, Übung</title>
+    <style>
+      /* NICHT ÄNDERN !!!!!!! */
+      .a,
+      .b,
+      .c,
+      .d,
+      .e {
+        margin: 6px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+      .a {
+        background-color: beige;
+      }
+      .b {
+        background-color: brown;
+      }
+      .c {
+        background-color: cyan;
+      }
+      .d {
+        background-color: darkkhaki;
+      }
+      .e {
+        background-color: darkslateblue;
+      }
+      /* DEIN CODE */
+      /*flex*/
+      .vonLinks {
+        display: flex; /*bringt den inthalt zum fließen*/
+        justify-content: flex-start; /*steurt den fluss auf der x- achse*/
+        flex-wrap: wrap; /*brechen auf next ziel*/
+      }
+      .vonRechts {
+        display: flex; /*bringt den inthalt zum fließen*/
+        justify-content: flex-end; /*steurt den fluss auf der x- achse*/
+        flex-wrap: ; /*brechen auf next ziel*/
+      }
+
+      .mittig {
+        display: flex; /*bringt den inthalt zum fließen*/
+        justify-content: center; /*steurt den fluss auf der x- achse*/
+        flex-wrap: ; /*brechen auf next ziel*/
+      }
+      .durchstrecken {
+        display: flex; /*bringt den inthalt zum fließen*/
+        justify-content: space-between; /*steurt den fluss auf der x- achse*/
+        flex-wrap: ; /*brechen auf next ziel*/
+      }
+      .teilstrecken {
+        display: flex; /*bringt den inthalt zum fließen*/
+        justify-content: space-around; /*steurt den fluss auf der x- achse*/
+        flex-wrap: ; /*brechen auf next ziel*/
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Durchstrecken</h3>
+    <div class="durchstrecken">
+      <div class="a">1</div>
+      <div class="b">2</div>
+      <div class="c">3</div>
+      <div class="d">4</div>
+      <div class="e">5</div>
+    </div>
+    <h3>Teilstrecken</h3>
+    <div class="teilstrecken">
+      <div class="a">1</div>
+      <div class="b">2</div>
+      <div class="c">3</div>
+      <div class="d">4</div>
+      <div class="e">5</div>
+    </div>
+    <h3>von Rechts fließend</h3>
+    <div class="vonRechts">
+      <div class="a">1</div>
+      <div class="b">2</div>
+      <div class="c">3</div>
+      <div class="d">4</div>
+      <div class="e">5</div>
+    </div>
+    <h3>von Links fließend</h3>
+    <div class="vonLinks">
+      <div class="a">1</div>
+      <div class="b">2</div>
+      <div class="c">3</div>
+      <div class="d">4</div>
+      <div class="e">5</div>
+    </div>
+    <h3>Mittig</h3>
+    <div class="mittig">
+      <div class="a">1</div>
+      <div class="b">2</div>
+      <div class="c">3</div>
+      <div class="d">4</div>
+      <div class="e">5</div>
+    </div>
+  </body>
+</html>
